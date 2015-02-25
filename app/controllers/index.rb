@@ -3,13 +3,14 @@ require 'pony'
 
 get '/' do
   <<-HTML
-  <h1>Trevor Nelson</h1>
-  <ul>
-    <li><a href="/city/astoria">Where Trevor lives.</a></li>
-    <li><a href="/projects/portfolio-site">Project: trevornelson.github.io</a></li>
-    <li><a href="/projects/squeeklights-site">Project: squeeklights.com</a></li>
-    <li><a href="/contact">Email me.</a></li>
-  </ul>
+  <p>
+  Welcome to my LightSaber.  Prepare to be amazed.
+  <p>
+  <a href='/sound'>Hear my swooshy sound!</a>
+  <a href="/city/astoria">Where Trevor lives.</a>
+  <a href="/projects/portfolio-site">Project: trevornelson.github.io</a>
+  <a href="/projects/squeeklights-site">Project: squeeklights.com</a>
+  <a href="/contact">Email me.</a>
   HTML
 end
 
@@ -61,3 +62,14 @@ post '/contact' do
             :subject => params[:subject],
             :body => params[:body]
 end
+
+get '/sound' do
+  <<-HTML
+<audio controls>
+  <source src="http://soundbible.com/grab.php?id=19&type=wav" type="audio/wav">
+  <source src="http://soundbible.com/grab.php?id=19&type=mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  HTML
+end
+
