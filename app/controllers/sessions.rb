@@ -1,4 +1,5 @@
 get '/log-in' do
+  @title = "Login"
   params[:errors] == "1" ? @headline = "Sorry, invalid login credentials." : @headline = "Account Login"
   erb :"users/log_in"
 end

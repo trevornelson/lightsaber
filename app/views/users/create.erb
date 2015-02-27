@@ -1,8 +1,13 @@
-<div class="container">
-  <h1>Create Account</h1>
-  <form action="/users" method="post">
+<h1>Create Account</h1>
+<form action="/users" method="post">
+  <label>Name:
     <input type="text" name="name">
+  </label>
+  <label>Password:
     <input type="password" name="password">
-    <input type="submit">
-  </form>
-</div>
+  </label>
+  <label>Verify Password:
+    <input type="password" name="password_confirmation">
+  </label>
+  <input type="submit">
+</form>

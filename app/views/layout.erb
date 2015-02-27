@@ -3,9 +3,23 @@
 <head>
   <link rel='stylesheet' href='stylesheets/normalize.css' type='text/css'>
   <link rel='stylesheet' href='stylesheets/application.css' type='text/css'>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
   <title><%= @title || "LightSaber" %></title>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="container">
     <%= yield %>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
