@@ -6,6 +6,7 @@ get '/users' do
     html_output << "<li>#{user.name}</li>"
   end
   html_output << "</ul>"
+  html_output
 end
 
 ## View a user's page
@@ -29,6 +30,7 @@ get '/create_user' do
       Password:
       <input type="password" name="name">
     </label>
+    <input type="submit">
   </form>
   HTML
 end
