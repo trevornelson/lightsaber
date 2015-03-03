@@ -1,6 +1,7 @@
 src_files:
     - javascripts/vendor/**/*.js
     - javascripts/src/**/*.js
+    - public/javascripts/**/*.js
 
 stylesheets:
 
