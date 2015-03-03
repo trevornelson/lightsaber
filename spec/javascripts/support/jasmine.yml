@@ -1,6 +1,5 @@
 src_files:
-    - javascripts/vendor/**/*.js
-    - javascripts/src/**/*.js
+    - 'public/javascripts/calculator.js'
 
 stylesheets:
 

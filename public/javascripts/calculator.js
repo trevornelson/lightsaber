@@ -1,4 +1,4 @@
-function(){
+function createCalculator(){
   return {
     add: function(a,b){
       return a+b;
@@ -18,3 +18,4 @@ function(){
     }
   };
 }
+
